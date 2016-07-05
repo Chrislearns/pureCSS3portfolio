@@ -19,23 +19,67 @@ header{
     
     
 }
-.navbar-brand{
-    float:left;
-   padding-left: 1.4em;
-    padding-top: 1em;
+
+.topnav{
+    display:inline;
+    transition: 0.3s;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    
+}
+ul.topnav li {float: right;}
+
+ul.topnav li.icon {
+    display: none;}
+
+
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive 
+    {position: relative;}
+    
+  ul.topnav.responsive li.icon 
+    {
     position: absolute;
-}
-ul{
-    display:inline;
-    float:right;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li 
+    {
+    float: none;
+    display: inline;
+    
+  }
+  ul.topnav.responsive li a 
+    {
+    display: block;
+    text-align: left;
+    background: brown;
     
     
-}
-li {
-    display:inline;
-    padding: .7em;
-    margin-right: .5em;
-    
+  }
 }
 
 h2{
@@ -43,28 +87,40 @@ h2{
     text-align: center;
 }
 
-#intro-p{
+.intro-p{
     font-family: 'Libre Baskerville', serif;
     line-height: 1.5em;
+    padding-left: .7em;
 }
 
 #intro-float{
     float:left;
-    width:47%;
+    width:67%;
 }
 img.imgMe{
   
-    display:inline;
     float:right;
-    margin-top: 5em;
-    margin: auto;
+    width: 27%;
+    position: relative;
+    margin-top: 5%;
+    
+    
     
     
     
   
 }
 
-    
+@media all and (max-width:800px)
+{
+    #intro{
+       margin-top: -1.3em;
+        
+    }
+    h2.aboutMe{
+        padding: .5em;
+    }
+}
 
 #intro{
     padding-left: 5px;
@@ -89,10 +145,11 @@ img.imgMe{
         
     }
     #img-float{
-        width: 60%;
+        width: 70%;
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 2em;
+        
     }
 }
 .h2Header{
@@ -125,7 +182,10 @@ img.imgMe{
     text-align: center;
     
 }
-
+#img-size{
+    width: 80%;
+    
+}
 figcaption{
     text-align: center;
     width:20em;
@@ -148,13 +208,74 @@ figcaption{
         padding: 5%;
               
     }
-    figcaption{
-     display: block;
-    text-align: center;
+    
+    figcaption
+    {
+        display: block;
+        text-align: center;
         padding: .8em;
         line-height: 1.5em;
         width: 20em;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+#contact{
+    background: brown;
+    margin-top: -1.3em;
+    height: 13em;
+}
+
+.social-head{
+    padding-top: 1em;
+    
+}
+
+.social{
+    display: inline;
+    float: left;
+    width: 47%;
+    
+}
+
+.social1{
+    margin-bottom: -.3em;
+}
+
+.font-awesome{
+    text-align: center;
+    
+}
+
+
+
+.location{
+    display: inline;
+    float: right;
+    width: 47%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    
+    
+}
+
+@media all and (max-width:800px)
+{
+    .social, .location, .font-awesome{
+        display: block;
+        float: none;
+        margin-right: auto;
+        margin-left: auto;
+        width: 97%;
+        text-align: center;
+        
+    
+        
+        
+    }
+    #contact{
+        height: 199%;
     }
 }
