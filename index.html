@@ -17,16 +17,22 @@
   
  
        <link href='https://fonts.googleapis.com/css?family=Nunito|Libre+Baskerville' rel='stylesheet' type='text/css'>
+       
+       <script>
+    function myFunction() {
+    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+    }</script>
 
 </head>
 
   <header>
   
    
-          <a class="navbar-brand" href="https://www.freecodecamp.com/chrislearns">ChrisLearns</a>
+         
        
        <nav>
-          <ul id="header-nav">
+          <ul class="topnav">
+           
             <li>
               <a href="#intro">About</a>
             </li>
@@ -36,6 +42,12 @@
             <li>
               <a href="#contact">Contact</a>
             </li>
+            <li>
+                 <a class="navbar-brand" href="https://www.freecodecamp.com/chrislearns">ChrisLearns</a>
+            </li>
+            <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li>
           </ul>
  
     </nav>
@@ -51,8 +63,9 @@
          <div id="intro-float">
           <h2 class="aboutMe">About</h2>
          
-              <p id= "intro-p">Hello I'm Christopher Adonis Drain and I go by the pseudonym Chris Learns. I'm currently a student of the Free Code Camp on the path to becoming a Full-Stack Developer. The best way to describe this portfolio page is me practicing the various
-                techniques, styles, colors, and bootstrap methods I've learned so far. Also on this page I will be showcasing my projects, all of which I passionately update everytime a new idea comes to mind. Enjoy and leave feedback!</p>
+              <p class= "intro-p">Hello I'm Christopher Adonis Drain and I go by the pseudonym Chris Learns. I'm currently a student of the Free Code Camp on the path to becoming a Full-Stack Developer. 
+           </p>
+           <p class="intro-p">Welcome To my pure CSS Responsive Design portfolio page. I did this page as an excercise to level up my CSS skills. This page was tons of fun to make and I even added a toggle button for the header to make viewing on mobile more pleasent. Enjoy the design and if you're on a Computer resize your browser widow to check out the responsiveness.</p>
               <hr/>
            
             </div>
